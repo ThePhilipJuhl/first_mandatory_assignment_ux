@@ -7,6 +7,7 @@
     --colorBgHeader: #1E4EB3;
     --colorBgNav: #1E4EB3;
     --colortitle: white;
+    --colorButton: white;
 
     --coverMaxWidth: ;
     --coverMaxheight: ;
@@ -15,9 +16,6 @@
 /* ALL THE COLORS!!!!!!!! */
 /* any fixed pixl dimension!!!!!!!!! */
 
-    /* 
-        System fonts grouped from https://modernfontstacks.com/ 
-    */
 
     /* Neo-Grotesque */
     --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;

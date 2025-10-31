@@ -1,1 +1,2 @@
-export const apiKey = '1234'
+export const apiKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlOWZhYzc3MDI3ODI2NTFjZmEzNWZmNWI5MzYxZTBkMiIsIm5iZiI6MTc2MDY4NDI4MC41ODUsInN1YiI6IjY4ZjFlOGY4NWJhMWVlZTNjNDBlNDdkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._u3TLO7eba7aZC8L5fSVTWggVpLzGqGS_acMv0ULo7Y';
+export const baseUrl = 'api.themoviedb.org';

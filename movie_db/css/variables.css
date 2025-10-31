@@ -1,0 +1,33 @@
+:root {
+    --colorMain: #1C273B;
+    --colorHeader: #1E4EB3;
+    --colorList: #C8D1DAff;
+    --colorSelected: #4487F5ff;
+    --colorLink: #C8D1DAff;
+    --colorBgHeader: #1E4EB3;
+    --colorBgNav: #1E4EB3;
+    --colortitle: white;
+
+    --coverMaxWidth: ;
+    --coverMaxheight: ;
+
+
+/* ALL THE COLORS!!!!!!!! */
+/* any fixed pixl dimension!!!!!!!!! */
+
+    /* 
+        System fonts grouped from https://modernfontstacks.com/ 
+    */
+
+    /* Neo-Grotesque */
+    --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+
+    /* Humanist */
+    --fontTitle: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+
+    /* Industrial */
+    --fontNav: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    /* Geometric Humanist */
+    --fontList: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}

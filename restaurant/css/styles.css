@@ -1,0 +1,153 @@
+@import 'variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    
+    > header {
+        padding: 0.5rem 1rem;
+        color: var(--colourBgComplementary);
+        background-color: var(--colourBgMain);
+    }
+
+    nav {
+        background-color: var(--colourBgNav);
+        > ul {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 0 1rem 0;
+
+
+            list-style-type: none;
+
+            > li {
+                width: 21rem; 
+    
+                > a {
+                    display: block; 
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: var(--colourBgComplementary);
+                    text-align: center;
+                    font-size: large;
+                }
+
+                &.underline {
+                    border-bottom: 1px solid var(--colourBgComplementary);
+                }
+                &.active > a {
+                    color: red;
+                }
+            }
+            
+        }
+    }       
+}
+
+main {
+    .imagentxt{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    }
+
+    img{
+    border-radius: 1rem;
+    }
+
+    .main-txt{
+        font-size: large;
+    }
+
+    .main-list{
+        > ul {
+        color: red;
+        display: flex;
+        flex-flow: column;
+        padding: 0rem 1rem 0rem 1rem;
+        list-style-type: none;
+        > li {
+            padding-bottom: 0.5rem;
+       
+        }
+    }
+
+    }
+    .main-bottom{
+        > .main-box {
+            padding: 0rem 1rem 1rem 1rem;
+            background-color: #D3D3D3;
+            margin:0.5rem;
+            border-radius: 0.5rem;
+            > p {
+                padding: 0.5rem 0rem 0.5rem 0rem;
+                font-size: large;
+                
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    color: var(--colourBgComplementary);
+    background-color: var(--colourBgNav);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+
+    main{
+        > .imagentxt {
+            flex-flow: row-reverse;
+            align-items: right;
+            gap: 1rem;
+
+            > img {
+                max-width: 50%;
+                height: auto;
+                }
+            > .main-txt {
+            flex: 1;
+                 }
+            }
+
+    }
+
+    body {
+
+    nav {
+        > ul {
+            flex-flow: row;
+            justify-content: flex-start;     
+            list-style-type: none;
+            padding: 1rem 2rem;
+
+            > li {
+                width: auto;
+                margin-right: 2rem;
+                
+                > a {
+                    font-size: 1.1rem;
+                }
+
+                &.underline {
+                    border-bottom: none;
+                }
+
+            }
+            
+        }
+    }            
+}
+
+}
+

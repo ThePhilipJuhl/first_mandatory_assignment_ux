@@ -1,0 +1,159 @@
+@import 'variables.css';
+
+main {
+    background-color: white;
+    padding: 1rem;
+    
+    > .menu-item {
+        padding: 1rem;
+        background-color: var(--colourBgMain);
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        
+        > img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        
+        > .menu-content {
+            > h2 {
+                color: var(--colourBgComplementary);
+                font-family: var(--fontMain);
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-align: center;
+                margin: 1rem 0;
+                padding: 0 1rem;
+            }
+            
+            > p {
+                color: #333;
+                font-family: var(--fontMain);
+                font-size: 1rem;
+                line-height: 1.5;
+                margin: 0 0 1rem 0;
+                padding: 0 1rem;
+                text-align: left;
+            }
+            
+            > .price {
+                background-color: var(--colourRed);
+                color: white;
+                font-family: var(--fontMain);
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 0.25rem;
+                margin: 0 1rem 1rem 1rem;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 2rem;
+        
+        > .menu-item {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            background-color: var(--colourBgMain);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            
+            > img {
+                width: 50%;
+                height: auto;
+                border-radius: 0.5rem;
+                order: 2;
+            }
+            
+            > .menu-content {
+                width: 50%;
+                padding: 1.5rem;
+                order: 1;
+                
+                > h2 {
+                    font-size: 1.8rem;
+                    margin: 0 0 1rem 0;
+                    text-align: left;
+                }
+                
+                > p {
+                    font-size: 1.1rem;
+                    margin: 0 0 1.5rem 0;
+                    text-align: left;
+                }
+                
+                > .price {
+                    font-size: 1.1rem;
+                    padding: 0.6rem 1.2rem;
+                    margin: 0;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        
+        > .menu-item {
+            padding: 1rem;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            background-color: var(--colourBgMain);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            
+            > img {
+                width: 50%;
+                height: auto;
+                border-radius: 0.5rem;
+                order: 2;
+            }
+            
+            > .menu-content {
+                width: 50%;
+                padding: 1.5rem;
+                order: 1;
+                
+                > h2 {
+                    font-size: 1.8rem;
+                    margin: 0 0 1rem 0;
+                    text-align: left;
+                }
+                
+                > p {
+                    font-size: 1.1rem;
+                    margin: 0 0 1.5rem 0;
+                    text-align: left;
+                }
+                
+                > .price {
+                    font-size: 1.1rem;
+                    padding: 0.6rem 1.2rem;
+                    margin: 0;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

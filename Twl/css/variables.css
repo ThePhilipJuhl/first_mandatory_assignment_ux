@@ -1,31 +1,30 @@
 :root {
-    --colorMain: #;
-    --colorHeader: #;
-    --colorList: #;
-    --colorSelected: #;
-    --colorLink: #;
-    --colorBgHeader: #;
-    --colorBgNav: #;
-    --colortitle: ;
-    --colorButton: ;
+    /* Colors */
+    --colorMain: #f4efdf;          
+    --colorHeader: #3f5169;         
+    --colorHeaderDark: #344559;     
+    --colorNavItem: #ffffff;        
+    --colorText: #222222;            
+    --colorMuted: #5f6b7a;          
+    --colorAccent: #8c5a3c;          
+    --colorCard: #fffaf0;            
+    --colorBorder: #d9ccb6;          
+    --colorQuoteBg: #3f5169;                 
+    /* Layout */
+    --contentMaxWidth: 680px;
+    --contentPadding: 16px;
+    --radiusSm: 6px;
+    --radiusMd: 10px;
+    --shadowSm: 0 1px 2px rgba(0,0,0,.05);
+    --shadowMd: 0 4px 12px rgba(0,0,0,.12);
 
-    --coverMaxWidth: ;
-    --coverMaxheight: ;
-
-
-/* ALL THE COLORS!!!!!!!! */
-/* any fixed pixl dimension!!!!!!!!! */
-
-
+    /* Typography */
     /* Neo-Grotesque */
     --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-
     /* Humanist */
     --fontTitle: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-
     /* Industrial */
     --fontNav: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
-
     /* Geometric Humanist */
     --fontList: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }

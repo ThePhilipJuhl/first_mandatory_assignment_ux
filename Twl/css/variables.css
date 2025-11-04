@@ -9,8 +9,9 @@
     --colorAccent: #8c5a3c;          
     --colorCard: #fffaf0;            
     --colorBorder: #d9ccb6;          
-    --colorQuoteBg: #3f5169;                 
-    /* Layout */
+    --colorQuoteBg: #3f5169;   
+    
+
     --contentMaxWidth: 680px;
     --contentPadding: 16px;
     --radiusSm: 6px;

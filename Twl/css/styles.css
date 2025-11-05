@@ -459,21 +459,10 @@ footer > p:last-child {
     flex: 1;
   }
 
-  /* tour */
-  .tour-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* books */
-  .books {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .book-card{
     flex-direction: row-reverse;
   }
 
-  /* footer */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -530,7 +519,6 @@ footer > p:last-child {
 
 }
 
-/* desktop */
 @media screen and (min-width: 950px) {
   .new-release-box > div:last-child {
     width: 200px;
@@ -567,18 +555,25 @@ footer > p:last-child {
     align-items: start;
   }
 
-  .contact-card {
+  .contact-card:nth-of-type(1) {
     grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact-card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .form {
     grid-column: 1;
+    grid-row: 3;
   }
 
   .contact-image {
     display: block;
     grid-column: 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / span 3;
     align-self: start;
   }
 
@@ -590,6 +585,14 @@ footer > p:last-child {
 }
 
 @media screen and (min-width: 1120px) {
+  .tour-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .books {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .bio-books {
     display: grid;
     grid-template-columns: 1fr 1fr;

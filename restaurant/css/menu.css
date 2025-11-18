@@ -1,0 +1,74 @@
+@import 'styles.css';
+
+
+
+article.plate {
+    margin-bottom: 0.75rem;
+    padding: 1.25rem;
+    border-radius: 1.1rem;
+    overflow: auto;
+    background-color: var(--colorBgArticle);
+    border: 1px solid rgba(11, 61, 96, 0.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    vertical-align: top;
+    > h2 {
+        font-size: 1.25rem;
+        letter-spacing: 0.02em;
+        color: var(--colorHeader);
+    }
+}
+
+p {
+    &.menuFood {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.45rem;
+        color: var(--colorMain);
+    }
+    &.costTag {
+        position: relative;
+        right: 0;
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.35rem 0.65rem;
+        border: thick solid var(--colorBgNav);
+        border-radius: 0.5rem;
+        color: var(--colorPrice);
+        background-color: var(--colorList);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0.03em;
+        text-align: right;
+    }
+}
+
+article > header {
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    text-indent: 0;
+    text-align: center;    
+    padding: 0;
+    background: linear-gradient(90deg, rgba(255, 209, 102, 0.35), rgba(255, 107, 107, 0));
+
+    @media only screen and (min-width: 600px) {
+        text-align: left;
+        width: calc(100% - 320px - 3rem);
+    }
+}
+img.menuImg {
+    width: 100%;
+    margin-bottom: 0.4rem;
+    border-radius: 0.8rem;
+    @media only screen and (min-width: 600px) {
+        float: right;
+        margin: 0 0 0 0.5rem;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1510px) {
+    article.plate {
+        display: inline-block;
+        width: 45%;
+    }
+}

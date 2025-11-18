@@ -1,0 +1,107 @@
+@import 'variables.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontMain);
+
+    header {
+        padding: 0 1rem;
+        color: var(--colorHeader);
+        background-color: var(--colorBgHeader); 
+        font-family: var(--fontTitle);
+        text-indent: 1rem;
+        line-height: 4rem;
+    }
+    
+    ul {
+        padding: 0.5rem;
+        li {    
+            list-style-type: none;
+            line-height: 1.6rem;
+            font-family: var(--fontList);
+            font-weight: bold;
+            color: var(--colorList);
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--colorLink);
+        font-weight: bold;
+        &:hover {
+            font-size: 1.1rem;
+        }
+    }
+
+    nav {
+        padding: 0 1rem;
+        color: var(--colorHeader);
+        background-color: var(--colorBgNav);
+        line-height: 2rem;
+        a {
+            color: var(--colorHeader);
+            &.selected {
+                color: var(--colorSelected);
+                font-size: 1.2em;
+            }
+        }
+        li {
+            display: block;
+            text-align: center;
+            border-bottom: thin solid var(--colorHeader);
+            color: var(--colorHeader);
+            font-family: var(--fontNav);
+            @media only screen and (min-width: 480px) {
+                display: inline;
+                padding-right: 1rem;
+                border-bottom: none;
+            }
+            &:nth-of-type(3) {
+                border-bottom: none;
+            }
+        }
+    }        
+    
+    > main {
+        padding: 0.5rem 1rem 1rem;
+        position: relative;
+        top: 0;
+        @media only screen and (min-width: 480px) {
+            padding-bottom: 3rem;
+        }
+        @media only screen and (min-width: 800px) {
+            width: 95vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media only screen and (min-width: 900px) {
+            width: 88vw;
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 80vw;
+        }
+    }
+    
+    > footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 0.5rem 0;
+        color: var(--colorHeader);
+        background-color: var(--colorBgNav);
+        text-align: center;
+        font-size: 0.8rem;    
+        @media only screen and (min-width: 480px) {
+            position: fixed;
+        }
+    }
+    
+    img {
+        width: 100%;
+        border-radius: 0.5rem;
+    }    
+}

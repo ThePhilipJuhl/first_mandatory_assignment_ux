@@ -1,0 +1,22 @@
+:root {
+    --colorMain: #1b1c1e;
+    --colorHeader: #0B3D60;
+    --colorList: #FF6B6B;
+    --colorSelected: #FFD166;
+    --colorPrice: #fff9f2;
+    --colorBgHeader: #FAF3DD;
+    --colorBgNav: #F1D8A8;
+    --colorBgQuote: #d7e3f4;
+    --colorBgArticle: #FFF6EA;
+    --colorLink: #FF6B6B;
+
+
+
+    --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+
+    --fontTitle: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+
+    --fontNav: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    --fontList: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}
